@@ -1,3 +1,10 @@
 {
-    "db": "mongodb://localhost:27017/test"
+  "url": "mongodb://localhost:27017/online",
+  "options": {
+    "useUnifiedTopology": true,
+    "useNewUrlParser": true,
+    "poolSize": 70,
+    "readPreference": null,
+    "replicaSet": null
+  }
 }

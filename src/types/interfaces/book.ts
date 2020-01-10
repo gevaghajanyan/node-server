@@ -10,7 +10,7 @@ export interface IBook extends Document {
   subDescription?: {
     title: string;
     list: string[];
-  },
+  };
   categories?: string[];
   rate?: number;
   pages?: number;

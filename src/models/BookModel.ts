@@ -1,9 +1,13 @@
 import { Schema, model } from 'mongoose';
+import { IBook } from '../types/interfaces/book';
 
-const BookSchema: Schema = new Schema({}, {versionKey: false});
+const BookSchema: Schema = new Schema(
+  {
+    _id: String,
+  },
+  {
+    versionKey: false,
+  }
+);
 
-const BookModel = model('books', BookSchema, 'books');
-
-export {
-  BookModel,
-}
+export const BookModel = model<IBook>('books', BookSchema, 'books');

@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77d715b0-fa50-47aa-8125-64fd16f91e62" name="Default Changelist" comment="" />
+    <list default="true" id="77d715b0-fa50-47aa-8125-64fd16f91e62" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/schemas/AuthRequestBody.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/schemas/AuthResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/schemas/BookResponse.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/schemas/Foo.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/configs/auth.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/configs/swagger.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/connections/mongoDb.conection.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/AuthController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/helpers/authorizationChecker.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/helpers/hash.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/helpers/swaggerHelpers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/UserModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/AuthService.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setups/bodyParserSetup.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setups/swaggerSetup.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/interfaces/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/db.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/db.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/connect.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/BookController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/BookController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/classes/HttpSuccess.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/classes/HttpSuccess.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/BookModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/BookModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/BookService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BookService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/interfaces/book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/interfaces/book.ts" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1VZKRUcmA755FnWAxz412V5muiR" />
   <component name="ProjectViewState">
@@ -14,16 +50,34 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../banqr/evoca-notification-templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/schemas" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
+    <property name="ts.external.directory.path" value="D:\node-app\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\node-app\src\components\schemas" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\node-app\src\core" />
       <recent name="C:\Users\gevorg.aghajanyan\Documents\projects\personal\node-app\src\components" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="npm.start">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -64,18 +118,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -89,6 +131,10 @@
       <workItem from="1577455169957" duration="14247000" />
       <workItem from="1577686389289" duration="131000" />
       <workItem from="1577689839939" duration="230000" />
+      <workItem from="1578328325844" duration="1240000" />
+      <workItem from="1578329598836" duration="650000" />
+      <workItem from="1578587027759" duration="348000" />
+      <workItem from="1578587406936" duration="18070000" />
     </task>
     <servers />
   </component>
@@ -96,16 +142,21 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/services/BookService.js" />
-        <option value="$PROJECT_DIR$/src/controllers/BookController.js" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/src/server/index.js" />
-        <option value="$PROJECT_DIR$/src/components/schemas/index.js" />
         <option value="$PROJECT_DIR$/src/types/interfaces/book.js" />
-        <option value="$PROJECT_DIR$/src/models/BookModel.js" />
-        <option value="$PROJECT_DIR$/src/core/constants.js" />
-        <option value="$PROJECT_DIR$/src/connect.js" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="WindowStateProjectService">

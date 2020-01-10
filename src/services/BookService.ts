@@ -1,20 +1,21 @@
 import { Service } from 'typedi';
+import { DocumentQuery } from 'mongoose';
 
 import { BookModel } from '../models/BookModel';
+import { IBook } from '../types/interfaces/book';
 
 @Service()
-class BookService {
-  getAllBooks() {
-    const query = BookModel.find({}, null, {lean: true}).then((value)=> {
-      console.log(value, 'value')
-    }).catch(err=> {
-      console.log(err, 'fooo')
-    })
-    
-    return query;
+export class BookService {
+  public getAllBooks(): DocumentQuery<IBook[], IBook> & {} {
+    return BookModel.find({}, null, { lean: true });
   }
-}
 
-export {
-  BookService,
+  public deleteBook(id: string) {
+    return BookModel.deleteOne({ _id: id })
+  }
+
+  public getBookById(id: string) {
+    return BookModel.findById(id, null, { lean: true })
+  }
+
 }

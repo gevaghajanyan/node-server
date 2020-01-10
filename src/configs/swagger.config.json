@@ -1,0 +1,17 @@
+{
+  "components": {
+    "schemas": null,
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "info": {
+    "description": "description",
+    "title": "Online book library",
+    "version": "1.0.0"
+  }
+}

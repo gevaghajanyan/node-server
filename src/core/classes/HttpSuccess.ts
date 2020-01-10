@@ -1,11 +1,20 @@
-export class HttpSuccess {
-    public data: any;
-    public errors: string[];
-    public statusCode: number;
+export class HttpResponse<T> {
+  constructor(
+    public statusCode: number,
+    public data: T,
+    public errorMessages: Array<string>,
+  ) {
+  }
+}
 
-    constructor(data:any, errors?: string[], statusCode?: number) {
-        this.data = data;
-        this.errors = null;
-        this.statusCode = 200;
-    }
+export class SuccessHttpResponse<T> extends HttpResponse<T> {
+  constructor(data: T) {
+    super(200, data, null);
+  }
+}
+
+export class ErrorHttpResponse extends HttpResponse<null> {
+  constructor(errorMessages: Array<string>) {
+    super(500, null, errorMessages);
+  }
 }
