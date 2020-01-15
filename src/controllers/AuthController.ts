@@ -1,14 +1,9 @@
 import { Inject } from 'typedi';
 import {
   Controller,
-  Param,
   Body,
-  Get,
   Post,
-  Put,
-  Delete,
-  HttpCode,
-  Authorized, Req, ContentType,
+  ContentType,
 } from 'routing-controllers';
 
 import { AuthService } from '../services/AuthService';

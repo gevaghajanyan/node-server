@@ -6,7 +6,11 @@ export const authorizationChecker = (action: Action, roles: string[]): Promise<b
   return new Promise((resolve, reject) => {
     const token = action.request.headers['authorization'];
 
-    if (!token && token.search(/[Bb]earer/) === -1) {
+    if (!token) {
+      resolve(false);
+    }
+
+    if (token.search(/[Bb]earer/) === -1) {
       resolve(false);
     }
 

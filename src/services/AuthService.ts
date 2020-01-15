@@ -5,24 +5,32 @@ import { AuthResponse } from '../components/schemas/AuthResponse';
 import { secret_key } from '../configs/auth.config.json';
 import { getHash } from '../core/helpers/hash';
 import { UserModel } from '../models/UserModel';
-import { error } from 'winston';
 
 export class AuthService {
-  public signIn(data: AuthRequestBody): Promise<AuthResponse> {
+  public signIn(client: AuthRequestBody): Promise<AuthResponse> {
 
-    const payload = { 'userId': 'b08f86af-35da-48f2-8fab-cef3904660bd' }; // get mongoDb
+    const { userName, password } = client;
 
     return new Promise((resolve, reject) => {
-      jwt.sign(payload, secret_key, {
-        expiresIn: '7d'
-      }, (error, token) => {
-        if (error) {
-          reject(error);
+      UserModel.findOne({ userName }).then((user: any) => {
+        console.log(user, 'user', getHash(password), user.password === getHash(password));
+        if (user && user.password === getHash(password)) {
+          jwt.sign({
+              id: user._id,
+              userName: user.userName
+            },
+            secret_key,
+            { expiresIn: '7d' },
+            (error, token) => {
+              if (error) {
+                reject(error);
+              }
+              resolve({ token });
+            })
+        } else {
+          reject('error 1')
         }
-        resolve({
-          token,
-        })
-      })
+      });
     })
   }
 

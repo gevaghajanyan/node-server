@@ -22,9 +22,7 @@ const routingControllersOptions = {
 
 const server: Express = createExpressServer(routingControllersOptions);
 
-/**
- * setups
- */
+/**setups*/
 bodyParserSetup(server);
 swaggerSetup(server, {
   routingControllersOptions,

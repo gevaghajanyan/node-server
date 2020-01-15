@@ -4,6 +4,10 @@ const mongoConfig: IOption = require('../configs/db.config.json');
 
 mongoose.Promise = Promise;
 
+mongoose.Types.ObjectId.prototype.valueOf = function () {
+  return this.toString();
+};
+
 interface IOption {
   url: string;
   options: {

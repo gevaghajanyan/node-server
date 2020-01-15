@@ -1,13 +1,13 @@
 import { Service } from 'typedi';
-import { DocumentQuery } from 'mongoose';
 
 import { BookModel } from '../models/BookModel';
-import { IBook } from '../types/interfaces/book';
 
 @Service()
 export class BookService {
-  public getAllBooks(): DocumentQuery<IBook[], IBook> & {} {
-    return BookModel.find({}, null, { lean: true });
+  public getAllBooks() {
+    return BookModel
+      .find({}, null, { lean: false })
+      .then(data => data.map(elem => elem.toObject()));
   }
 
   public deleteBook(id: string) {

@@ -2,37 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77d715b0-fa50-47aa-8125-64fd16f91e62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/schemas/AuthRequestBody.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/schemas/AuthResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/schemas/BookResponse.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/schemas/Foo.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/configs/auth.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/configs/swagger.config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/connections/mongoDb.conection.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/AuthController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/helpers/authorizationChecker.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/helpers/hash.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/core/helpers/swaggerHelpers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/UserModel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/AuthService.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setups/bodyParserSetup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/setups/swaggerSetup.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/interfaces/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configs/db.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/db.config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/connect.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/BookController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/BookController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/classes/HttpSuccess.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/classes/HttpSuccess.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/auth.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/auth.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/connections/mongoDb.conection.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/connections/mongoDb.conection.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AuthController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/helpers/authorizationChecker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/helpers/authorizationChecker.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/BookModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/BookModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/AuthService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AuthService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/BookService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BookService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/interfaces/book.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/interfaces/book.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -134,8 +112,20 @@
       <workItem from="1578328325844" duration="1240000" />
       <workItem from="1578329598836" duration="650000" />
       <workItem from="1578587027759" duration="348000" />
-      <workItem from="1578587406936" duration="18070000" />
+      <workItem from="1578587406936" duration="18840000" />
+      <workItem from="1578853255284" duration="1674000" />
+      <workItem from="1578899080593" duration="856000" />
+      <workItem from="1579118398696" duration="925000" />
+      <workItem from="1579119580631" duration="600000" />
     </task>
+    <task id="LOCAL-00001" summary="user Register">
+      <created>1578687891930</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578687891930</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +148,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="user Register" />
+    <option name="LAST_COMMIT_MESSAGE" value="user Register" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2660" y="276" key="FileChooserDialogImpl" timestamp="1577690065152">
