@@ -7,6 +7,8 @@ import { controllers } from './src/controllers';
 import { authorizationChecker } from './src/core/helpers/authorizationChecker';
 import { bodyParserSetup } from './src/setups/bodyParserSetup';
 import { swaggerSetup } from './src/setups/swaggerSetup';
+import { corsSetup } from './src/setups/corsSetup';
+import { errorSetup } from './src/setups/errorSetup';
 import './src/connections/mongoDb.conection';
 
 useContainer(Container);
@@ -23,6 +25,7 @@ const routingControllersOptions = {
 const server: Express = createExpressServer(routingControllersOptions);
 
 /**setups*/
+corsSetup(server);
 bodyParserSetup(server);
 swaggerSetup(server, {
   routingControllersOptions,

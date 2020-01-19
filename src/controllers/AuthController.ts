@@ -1,46 +1,46 @@
 import { Inject } from 'typedi';
 import {
-  Controller,
   Body,
   Post,
-  ContentType,
+  JsonController,
 } from 'routing-controllers';
 
 import { AuthService } from '../services/AuthService';
-import { ErrorHttpResponse, SuccessHttpResponse } from '../core/classes/HttpSuccess';
-import { AuthRequestBody } from '../components/schemas/AuthRequestBody';
+import { SuccessHttpResponse } from '../core/classes/HttpSuccess';
 import { AuthResponse } from '../components/schemas/AuthResponse';
 import { ResponseSchema } from 'routing-controllers-openapi';
+import { IUser } from '../types/interfaces/auth';
+import { SignInBody } from '../components/schemas/SignInBody';
+import { AuthError } from '../errors/AuthError';
 
-@Controller('/auth')
+@JsonController('/auth')
 export class AuthController {
   @Inject()
   private readonly authService: AuthService;
 
   @Post('/signIn')
-  @ContentType('application/json')
   @ResponseSchema(AuthResponse)
   public async signIn(
-    @Body() client: AuthRequestBody,
+    @Body() client: IUser,
   ): Promise<SuccessHttpResponse<AuthResponse>> {
     try {
       const token = await this.authService.signIn(client);
       return new SuccessHttpResponse<AuthResponse>(token);
-    } catch ( e ) {
-      return new ErrorHttpResponse(e.message)
+    } catch ( error ) {
+      throw new Error(error)
     }
   }
 
   @Post('/signUp')
-  @ContentType('application/json')
   public async signUp(
-    @Body() user: AuthRequestBody,
+    @Body() user: SignInBody,
   ) {
     try {
-      const token = await this.authService.signUp(user);
-      return new SuccessHttpResponse(token);
-    } catch ( e ) {
-      return new ErrorHttpResponse(e.message)
+      console.log(user, 'user-c');
+      await this.authService.signUp(user);
+      return new SuccessHttpResponse(null);
+    } catch ( error) {
+      throw new AuthError(error)
     }
   }
 

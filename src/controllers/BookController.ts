@@ -7,23 +7,22 @@ import {
   Post,
   Put,
   Delete,
-  HttpCode,
-  Authorized, ContentType,
+  Authorized,
+  JsonController, UseAfter,
 } from 'routing-controllers';
 
-import { ResponseSchema,  } from 'routing-controllers-openapi';
+import { ResponseSchema, } from 'routing-controllers-openapi';
 
 import { BookService } from '../services/BookService';
 import { SuccessHttpResponse } from '../core/classes/HttpSuccess';
 import { BookResponse } from '../components/schemas/BookResponse';
 
-@Controller('/books')
+@JsonController('/books')
 export class BookController {
   @Inject()
   private readonly bookService: BookService;
 
   @Get('/')
-  @ContentType('application/json')
   @ResponseSchema(BookResponse)
   public async getBooks(): Promise<SuccessHttpResponse<BookResponse[]>> {
     try {
@@ -35,13 +34,11 @@ export class BookController {
   }
 
   @Get('/:id')
-  @ContentType('application/json')
   public async getBookById(
     @Param('id') id: string,
   ) {
     try {
       const book = await this.bookService.getBookById(id);
-      // book._id = id;
       return new SuccessHttpResponse(book)
     } catch ( error ) {
       throw new Error(error)
@@ -50,7 +47,6 @@ export class BookController {
 
   @Post('/')
   @Authorized()
-  @ContentType('application/json')
   public addBook(
     @Body() book: any
   ) {
@@ -59,7 +55,6 @@ export class BookController {
 
   @Put('/')
   @Authorized()
-  @ContentType('application/json')
   public editBook(
     @Body() user: any
   ) {
@@ -68,7 +63,6 @@ export class BookController {
 
   @Delete('/:id')
   @Authorized()
-  @ContentType('application/json')
   public async deleteBook(@Param('id') id: string): Promise<SuccessHttpResponse<null>> {
     try {
       await this.bookService.deleteBook(id);
@@ -77,6 +71,5 @@ export class BookController {
       throw new Error(error)
     }
   }
-
 }
 

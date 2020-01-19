@@ -5,15 +5,14 @@ import { AuthResponse } from '../components/schemas/AuthResponse';
 import { secret_key } from '../configs/auth.config.json';
 import { getHash } from '../core/helpers/hash';
 import { UserModel } from '../models/UserModel';
+import { User } from '../core/classes/User';
+import { IUser } from '../types/interfaces/auth';
 
 export class AuthService {
-  public signIn(client: AuthRequestBody): Promise<AuthResponse> {
-
-    const { userName, password } = client;
-
+  public signIn(client: IUser): Promise<AuthResponse> {
+    const { email, password } = client;
     return new Promise((resolve, reject) => {
-      UserModel.findOne({ userName }).then((user: any) => {
-        console.log(user, 'user', getHash(password), user.password === getHash(password));
+      UserModel.findOne({ email }).then((user: any) => {
         if (user && user.password === getHash(password)) {
           jwt.sign({
               id: user._id,
@@ -34,18 +33,24 @@ export class AuthService {
     })
   }
 
-  public signUp(data: AuthRequestBody): Promise<any> {
+  public signUp(data: IUser): Promise<any> {
     return new Promise((resolve, reject) => {
-
-      data.password = getHash(data.password);
-      const userModel = new UserModel(data);
-      userModel.save((err, product) => {
-        if (err) {
-          console.log(err, 'errr');
-          reject(err);
+      UserModel.findOne({ email: data.email }).then((user: any) => {
+        if (user) {
+          reject('invalidUserName');
+          return;
         }
-        console.log(product, 'product');
-        resolve(product)
+        try {
+          const userModel = new UserModel(User.createUser(data));
+          userModel.save((err, product) => {
+            if (err) {
+              reject(err);
+            }
+            resolve(product)
+          })
+        } catch ( e ) {
+          reject(e)
+        }
       })
     })
   }

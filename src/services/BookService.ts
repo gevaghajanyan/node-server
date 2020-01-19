@@ -16,6 +16,11 @@ export class BookService {
 
   public getBookById(id: string) {
     return BookModel.findById(id, null, { lean: true })
+      .then(book => {
+        book.id = book._id.toString();
+        delete book._id;
+        return book
+      })
   }
 
 }
