@@ -1,5 +1,5 @@
 {
-  "name": "node-app",
+  "name": "book-server",
   "version": "1.0.0",
   "description": "node app for online book libary",
   "main": "index.ts",

@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77d715b0-fa50-47aa-8125-64fd16f91e62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/setups/corsSetup.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/AuthController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/AuthController.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/BookController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/BookController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/AuthService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AuthService.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/BookService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BookService.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +29,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
-    <property name="ts.external.directory.path" value="D:\node-app\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="E:\BookService\book-server\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -119,6 +114,8 @@
       <workItem from="1579119580631" duration="787000" />
       <workItem from="1579284358521" duration="1158000" />
       <workItem from="1579286726532" duration="4026000" />
+      <workItem from="1579468861925" duration="321000" />
+      <workItem from="1579539279004" duration="4064000" />
     </task>
     <task id="LOCAL-00001" summary="user Register">
       <created>1578687891930</created>
@@ -134,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579120280571</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="implement sign functionality">
+      <created>1579468890139</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1579468890139</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +165,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="user Register" />
     <MESSAGE value="sign in" />
-    <option name="LAST_COMMIT_MESSAGE" value="sign in" />
+    <MESSAGE value="implement sign functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement sign functionality" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2660" y="276" key="FileChooserDialogImpl" timestamp="1577690065152">

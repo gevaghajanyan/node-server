@@ -8,7 +8,8 @@ import {
   Put,
   Delete,
   Authorized,
-  JsonController, UseAfter,
+  JsonController, Params,
+  QueryParams
 } from 'routing-controllers';
 
 import { ResponseSchema, } from 'routing-controllers-openapi';
@@ -24,10 +25,20 @@ export class BookController {
 
   @Get('/')
   @ResponseSchema(BookResponse)
-  public async getBooks(): Promise<SuccessHttpResponse<BookResponse[]>> {
+  public async getBooks(
+    @QueryParams() params: any,
+  ): Promise<SuccessHttpResponse<{
+    totalCount: number,
+    data: BookResponse[]
+  }>> {
     try {
-      const books: BookResponse[] = await this.bookService.getAllBooks();
-      return new SuccessHttpResponse(books)
+      const books: BookResponse[] = await this.bookService.getAllBooks(params);
+      const totalCount: number = await this.bookService.getTotalCount();
+
+      return new SuccessHttpResponse({
+        data: books,
+        totalCount,
+      })
     } catch ( error ) {
       throw new Error(error)
     }
