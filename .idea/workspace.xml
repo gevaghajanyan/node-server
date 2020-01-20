@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77d715b0-fa50-47aa-8125-64fd16f91e62" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/BookController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/BookController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/BookService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BookService.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -85,9 +82,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.start:watch" />
-        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +112,7 @@
       <workItem from="1579284358521" duration="1158000" />
       <workItem from="1579286726532" duration="4026000" />
       <workItem from="1579468861925" duration="321000" />
-      <workItem from="1579539279004" duration="4064000" />
+      <workItem from="1579539279004" duration="4610000" />
     </task>
     <task id="LOCAL-00001" summary="user Register">
       <created>1578687891930</created>
@@ -138,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579468890139</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add skip and limit in books get">
+      <created>1579549889046</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1579549889046</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +150,33 @@
     <option name="exactExcludedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/types/interfaces/book.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/src/components/schemas/SignInBody.js" />
+        <option value="$PROJECT_DIR$/src/components/schemas/Foo.js" />
+        <option value="$PROJECT_DIR$/src/components/schemas/AuthResponse.js" />
+        <option value="$PROJECT_DIR$/src/components/schemas/BookResponse.js" />
+        <option value="$PROJECT_DIR$/src/components/schemas/AuthRequestBody.js" />
+        <option value="$PROJECT_DIR$/src/errors/AuthError.js" />
+        <option value="$PROJECT_DIR$/src/errors/ServerInternalError.js" />
+        <option value="$PROJECT_DIR$/src/controllers/index.js" />
+        <option value="$PROJECT_DIR$/src/controllers/BookController.js" />
+        <option value="$PROJECT_DIR$/src/controllers/AuthController.js" />
+        <option value="$PROJECT_DIR$/src/setups/errorSetup.js" />
+        <option value="$PROJECT_DIR$/src/setups/bodyParserSetup.js" />
+        <option value="$PROJECT_DIR$/src/setups/swaggerSetup.js" />
+        <option value="$PROJECT_DIR$/src/setups/corsSetup.js" />
+        <option value="$PROJECT_DIR$/src/connections/mongoDb.conection.js" />
+        <option value="$PROJECT_DIR$/src/core/constants.js" />
+        <option value="$PROJECT_DIR$/src/models/BookModel.js" />
+        <option value="$PROJECT_DIR$/src/models/UserModel.js" />
+        <option value="$PROJECT_DIR$/src/services/AuthService.js" />
+        <option value="$PROJECT_DIR$/src/services/BookService.js" />
+        <option value="$PROJECT_DIR$/src/core/classes/HttpSuccess.js" />
+        <option value="$PROJECT_DIR$/src/core/classes/User.js" />
+        <option value="$PROJECT_DIR$/src/core/helpers/hash.js" />
+        <option value="$PROJECT_DIR$/src/core/helpers/authorizationChecker.js" />
+        <option value="$PROJECT_DIR$/src/core/helpers/swaggerHelpers.js" />
+        <option value="$PROJECT_DIR$/src/types/interfaces/auth.js" />
       </list>
     </option>
   </component>
@@ -166,7 +197,8 @@
     <MESSAGE value="user Register" />
     <MESSAGE value="sign in" />
     <MESSAGE value="implement sign functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement sign functionality" />
+    <MESSAGE value="add skip and limit in books get" />
+    <option name="LAST_COMMIT_MESSAGE" value="add skip and limit in books get" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2660" y="276" key="FileChooserDialogImpl" timestamp="1577690065152">
