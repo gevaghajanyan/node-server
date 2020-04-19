@@ -1,5 +1,5 @@
 {
-  "url": "mongodb://localhost:27017/online",
+  "url": "mongodb://localhost:27017/bookservice",
   "options": {
     "useUnifiedTopology": true,
     "useNewUrlParser": true,

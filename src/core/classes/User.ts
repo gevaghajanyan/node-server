@@ -47,7 +47,7 @@ export class User {
       firstName,
     } = data;
 
-    return new User(email, password, lastName, firstName);
+    return new User(email.toLowerCase(), password, lastName, firstName);
   }
 
 }

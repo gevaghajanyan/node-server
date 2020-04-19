@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77d715b0-fa50-47aa-8125-64fd16f91e62" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controllers/CategoriesController.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/CategoriesModel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/CategoriesService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/configs/db.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/db.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/BookController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/BookController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/classes/User.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/classes/User.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/AuthService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/AuthService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/BookService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/BookService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/interfaces/book.js" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,34 +31,23 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.TypeScript" />
-    <property name="ts.external.directory.path" value="E:\BookService\book-server\node_modules\typescript\lib" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="ts.external.directory.path" value="C:\Users\gagha\OneDrive\Desktop\BookService\book-server\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\node-app\src\components\schemas" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\node-app\src\core" />
       <recent name="C:\Users\gevorg.aghajanyan\Documents\projects\personal\node-app\src\components" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\node-app\src\components\schemas" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -112,7 +112,12 @@
       <workItem from="1579284358521" duration="1158000" />
       <workItem from="1579286726532" duration="4026000" />
       <workItem from="1579468861925" duration="321000" />
-      <workItem from="1579539279004" duration="4610000" />
+      <workItem from="1579539279004" duration="5726000" />
+      <workItem from="1580057553918" duration="3267000" />
+      <workItem from="1580460569162" duration="924000" />
+      <workItem from="1580590379175" duration="844000" />
+      <workItem from="1580762318224" duration="852000" />
+      <workItem from="1587296940886" duration="10929000" />
     </task>
     <task id="LOCAL-00001" summary="user Register">
       <created>1578687891930</created>
@@ -142,43 +147,18 @@
       <option name="project" value="LOCAL" />
       <updated>1579549889046</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add port constant">
+      <created>1579550552437</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579550552437</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/src/types/interfaces/book.js" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/src/components/schemas/SignInBody.js" />
-        <option value="$PROJECT_DIR$/src/components/schemas/Foo.js" />
-        <option value="$PROJECT_DIR$/src/components/schemas/AuthResponse.js" />
-        <option value="$PROJECT_DIR$/src/components/schemas/BookResponse.js" />
-        <option value="$PROJECT_DIR$/src/components/schemas/AuthRequestBody.js" />
-        <option value="$PROJECT_DIR$/src/errors/AuthError.js" />
-        <option value="$PROJECT_DIR$/src/errors/ServerInternalError.js" />
-        <option value="$PROJECT_DIR$/src/controllers/index.js" />
-        <option value="$PROJECT_DIR$/src/controllers/BookController.js" />
-        <option value="$PROJECT_DIR$/src/controllers/AuthController.js" />
-        <option value="$PROJECT_DIR$/src/setups/errorSetup.js" />
-        <option value="$PROJECT_DIR$/src/setups/bodyParserSetup.js" />
-        <option value="$PROJECT_DIR$/src/setups/swaggerSetup.js" />
-        <option value="$PROJECT_DIR$/src/setups/corsSetup.js" />
-        <option value="$PROJECT_DIR$/src/connections/mongoDb.conection.js" />
-        <option value="$PROJECT_DIR$/src/core/constants.js" />
-        <option value="$PROJECT_DIR$/src/models/BookModel.js" />
-        <option value="$PROJECT_DIR$/src/models/UserModel.js" />
-        <option value="$PROJECT_DIR$/src/services/AuthService.js" />
-        <option value="$PROJECT_DIR$/src/services/BookService.js" />
-        <option value="$PROJECT_DIR$/src/core/classes/HttpSuccess.js" />
-        <option value="$PROJECT_DIR$/src/core/classes/User.js" />
-        <option value="$PROJECT_DIR$/src/core/helpers/hash.js" />
-        <option value="$PROJECT_DIR$/src/core/helpers/authorizationChecker.js" />
-        <option value="$PROJECT_DIR$/src/core/helpers/swaggerHelpers.js" />
-        <option value="$PROJECT_DIR$/src/types/interfaces/auth.js" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -198,12 +178,39 @@
     <MESSAGE value="sign in" />
     <MESSAGE value="implement sign functionality" />
     <MESSAGE value="add skip and limit in books get" />
-    <option name="LAST_COMMIT_MESSAGE" value="add skip and limit in books get" />
+    <MESSAGE value="add port constant" />
+    <option name="LAST_COMMIT_MESSAGE" value="add port constant" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2660" y="276" key="FileChooserDialogImpl" timestamp="1577690065152">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="617" y="228" key="FileChooserDialogImpl" timestamp="1580763005325">
+      <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="2660" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040/3840.0.1920.1040@1920.0.1920.1040" timestamp="1577690065152" />
+    <state x="617" y="228" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1580763005325" />
+    <state x="301" y="73" key="SettingsEditor" timestamp="1580762903765">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="73" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1580762903765" />
+    <state x="496" y="28" width="607" height="804" key="find.popup" timestamp="1587299084958">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="28" width="607" height="804" key="find.popup/0.0.1600.860/0.-1080.1920.1040@0.0.1600.860" timestamp="1587299084958" />
+    <state x="556" y="-862" width="807" height="820" key="search.everywhere.popup" timestamp="1587323370540">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="556" y="-862" width="807" height="820" key="search.everywhere.popup/0.0.1600.860/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1587323370540" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/0.-1080.1920.1040@0.0.1600.860" timestamp="1587301591705" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1580762326703" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/types/interfaces/book.ts</url>
+          <line>7</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

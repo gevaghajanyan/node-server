@@ -1,6 +1,5 @@
 import jwt from 'jsonwebtoken';
 
-import { AuthRequestBody } from '../components/schemas/AuthRequestBody';
 import { AuthResponse } from '../components/schemas/AuthResponse';
 import { secret_key } from '../configs/auth.config.json';
 import { getHash } from '../core/helpers/hash';
@@ -12,11 +11,11 @@ export class AuthService {
   public signIn(client: IUser): Promise<AuthResponse> {
     const { email, password } = client;
     return new Promise((resolve, reject) => {
-      UserModel.findOne({ email }).then((user: any) => {
+      UserModel.findOne({ email: email.toLowerCase() }).then((user: any) => {
         if (user && user.password === getHash(password)) {
           jwt.sign({
               id: user._id,
-              userName: user.userName
+              userName: user.userName,
             },
             secret_key,
             { expiresIn: '7d' },
@@ -25,12 +24,12 @@ export class AuthService {
                 reject(error);
               }
               resolve({ token });
-            })
+            });
         } else {
-          reject('error 1')
+          reject('error 1');
         }
       });
-    })
+    });
   }
 
   public signUp(data: IUser): Promise<any> {
@@ -46,12 +45,12 @@ export class AuthService {
             if (err) {
               reject(err);
             }
-            resolve(product)
-          })
-        } catch ( e ) {
-          reject(e)
+            resolve(product);
+          });
+        } catch (e) {
+          reject(e);
         }
-      })
-    })
+      });
+    });
   }
 }

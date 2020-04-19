@@ -1,6 +1,5 @@
 import { Inject } from 'typedi';
 import {
-  Controller,
   Param,
   Body,
   Get,
@@ -8,7 +7,7 @@ import {
   Put,
   Delete,
   Authorized,
-  JsonController, Params,
+  JsonController,
   QueryParams
 } from 'routing-controllers';
 
@@ -42,6 +41,28 @@ export class BookController {
     } catch ( error ) {
       throw new Error(error)
     }
+  }
+
+  @Get('/tops')
+  public async getTopBooks(): Promise<SuccessHttpResponse<BookResponse[]>> {
+    try {
+      const books: BookResponse[] = await this.bookService.getTopBooks();
+
+      return new SuccessHttpResponse(books);
+    } catch ( error ) {
+      throw new Error(error)
+    }
+  }
+
+  @Get('/lastet')
+  public async getLastetBooks(): Promise<SuccessHttpResponse<BookResponse[]>> {
+       try {
+      const books: BookResponse[] = await this.bookService.getTopBooks();
+
+      return new SuccessHttpResponse(books);
+    } catch ( error ) {
+      throw new Error(error)
+    } 
   }
 
   @Get('/:id')
